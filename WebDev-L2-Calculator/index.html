@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="NovaCalc — a simple, keyboard-friendly calculator for everyday arithmetic.">
+  <title>NovaCalc — A little clarity in every calculation</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header class="masthead">
+    <a class="brand" href="index.html" aria-label="NovaCalc home"><span class="brand-mark" aria-hidden="true">n.</span>NovaCalc</a>
+    <span class="edition">EVERYDAY TOOLS / 001</span>
+  </header>
+  <main>
+    <div class="intro"><p class="eyebrow">LESS FRICTION. MORE CLARITY.</p><h1>Small tool.<br>Countless possibilities.</h1><p>A little space to work things out.</p></div>
+    <section class="calculator" aria-label="Calculator">
+      <div class="calculator-top"><span><i aria-hidden="true"></i> READY TO CALCULATE</span><span aria-hidden="true">NC—01</span></div>
+      <div class="screen" aria-live="polite" aria-atomic="true">
+        <div id="context" class="context" aria-label="Previous operation">&nbsp;</div>
+        <output id="display" aria-label="Result">0</output>
+        <div class="screen-caption"><span id="status">Let's work it out.</span><span aria-hidden="true">DEC</span></div>
+      </div>
+      <div class="keypad">
+        <button class="utility clear" data-key="Escape" aria-label="Clear calculator">C</button>
+        <button class="utility" data-key="Backspace" aria-label="Delete last digit">⌫</button>
+        <button class="operator" data-key="/" aria-label="Divide">÷</button>
+        <button data-key="7">7</button><button data-key="8">8</button><button data-key="9">9</button><button class="operator" data-key="*" aria-label="Multiply">×</button>
+        <button data-key="4">4</button><button data-key="5">5</button><button data-key="6">6</button><button class="operator" data-key="-" aria-label="Subtract">−</button>
+        <button data-key="1">1</button><button data-key="2">2</button><button data-key="3">3</button><button class="operator" data-key="+" aria-label="Add">+</button>
+        <button class="zero" data-key="0">0</button><button data-key="." aria-label="Decimal point">.</button><button class="equals" data-key="=" aria-label="Equals">=</button>
+      </div>
+      <div class="calculator-bottom"><span>Made for the everyday.</span><span aria-hidden="true">+ − × ÷</span></div>
+    </section>
+    <p class="keyboard-note"><span aria-hidden="true">⌨</span> Your keyboard works here, too.<br><span class="shortcuts"><kbd>enter</kbd> equals <span>·</span> <kbd>esc</kbd> clear <span>·</span> <kbd>⌫</kbd> undo digit</span></p>
+  </main>
+  <footer><span>Built for Oasis Infobyte Internship</span><span>Thoughtfully simple.</span></footer>
+</body>
+</html>
+
