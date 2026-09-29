@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Your account · SecureGate</title><link rel="icon" href="data:,"><link rel="stylesheet" href="css/style.css"><script src="js/auth.js" defer></script><script src="js/dashboard.js" defer></script></head>
+<body class="dashboard-page">
+<noscript><p>Please enable JavaScript and <a href="index.html">sign in</a> to view your demo account.</p></noscript>
+<div id="dashboard" hidden>
+  <header class="dashboard-header"><a class="brand" href="dashboard.html"><span class="brand-icon" aria-hidden="true">s<span>g</span></span>SecureGate<span class="brand-dot">.</span></a><button class="logout-button" id="logout" type="button">Logout <span aria-hidden="true">↗</span></button></header>
+  <main class="dashboard-main"><div class="page-kicker"><span class="tiny-line"></span>03 / YOUR PERSONAL SPACE</div><div class="welcome-row"><div><h1 id="greeting">Welcome.</h1><p class="intro">You're signed in to your SecureGate demo account.</p></div><span class="status-badge"><span aria-hidden="true">●</span> Session active</span></div>
+  <section class="account-card" aria-labelledby="account-title"><div class="account-heading"><div class="avatar" id="initials" aria-hidden="true"></div><div><span class="eyebrow">A LITTLE ABOUT YOU</span><h2 id="account-title">Your account</h2></div><span class="account-number" aria-hidden="true">01</span></div><dl class="account-details"><div><dt>Full name</dt><dd id="fullName"></dd></div><div><dt>Username</dt><dd id="username"></dd></div><div><dt>Email</dt><dd id="email"></dd></div><div><dt>Member since</dt><dd id="memberSince"></dd></div></dl><div class="account-bottom"><span aria-hidden="true">✓</span> You’re right where you belong.</div></section>
+  <aside class="session-note"><span class="note-symbol" aria-hidden="true">i</span><div><h2>Your session, explained.</h2><p>Refresh and you’ll stay signed in in this tab. When you’re done, log out to end your session. Your demo account will be here for next time.</p></div></aside><p id="logout-error" class="form-message" role="status"></p>
+  <footer class="dashboard-footer"><span>Simple. Secure. Personal.</span><span>Educational demo <span class="footer-dot">·</span> Oasis Infobyte</span></footer></main>
+</div></body></html>
