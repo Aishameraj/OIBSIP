@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TaskFlow: a simple, local task manager. Plan it. Do it. Done.">
+  <title>TaskFlow — Plan it. Do it. Done.</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header class="site-header wrap">
+    <a class="brand" href="index.html" aria-label="TaskFlow home"><span class="brand-mark" aria-hidden="true">✓</span><span>TaskFlow<span class="tagline">Plan it. Do it. Done.</span></span></a>
+    <span class="header-note"><span class="status-dot" aria-hidden="true"></span>Your personal workspace</span>
+  </header>
+  <main class="wrap">
+    <section class="overview" aria-labelledby="welcome-title">
+      <div><p class="eyebrow">A LITTLE FOCUS, EVERY DAY</p><h1 id="welcome-title">Make room for <em>progress.</em></h1><p class="intro">Big plans start with small tasks. What’s on your list today?</p></div>
+      <div class="date-card"><span class="eyebrow">TODAY</span><time id="today"></time></div>
+    </section>
+    <section class="composer" aria-labelledby="composer-title">
+      <div class="section-kicker"><span aria-hidden="true">＋</span><h2 id="composer-title">One task closer.</h2></div>
+      <form id="task-form" novalidate>
+        <label for="task-input">Add a new task</label>
+        <div class="input-row"><input id="task-input" name="task" type="text" maxlength="120" placeholder="What needs to be done?" autocomplete="off" aria-describedby="input-help form-error"><button class="button primary" type="submit">Add Task <span aria-hidden="true">↗</span></button></div>
+        <div class="form-details"><span id="input-help">A small step is still a step. Press Enter to add.</span><span id="character-count">0 / 120</span></div>
+        <p id="form-error" class="error" role="alert"></p>
+      </form>
+    </section>
+    <section class="stats" aria-label="Task statistics">
+      <div class="stat"><span class="stat-label">Total tasks</span><strong id="total-count">0</strong><span class="stat-note">on your list</span></div>
+      <div class="stat"><span class="stat-label">Pending</span><strong id="pending-count">0</strong><span class="stat-note">one step at a time</span></div>
+      <div class="stat"><span class="stat-label">Completed</span><strong id="completed-count">0</strong><span class="stat-note">small wins, big progress</span></div>
+      <div class="progress-stat"><div><span class="stat-label">Your progress</span><strong id="progress-label">0%</strong></div><progress id="task-progress" max="100" value="0" aria-label="Tasks completed">0%</progress><span class="stat-note" id="progress-note">Your next small win starts here.</span></div>
+    </section>
+    <p id="storage-warning" class="storage-warning" role="status" hidden></p>
+    <div class="board" id="task-board">
+      <section class="task-section" aria-labelledby="pending-title"><div class="list-heading"><h2 id="pending-title"><span class="section-dot" aria-hidden="true"></span>Pending Tasks <span class="count-badge" id="pending-badge">0</span></h2><span class="list-caption">LET’S DO THIS</span></div><ul id="pending-list" class="task-list"></ul><div id="pending-empty" class="empty-state"><span class="empty-icon" aria-hidden="true">☷</span><h3>A fresh start.</h3><p>No pending tasks. Add something<br>you’d like to accomplish.</p></div></section>
+      <section class="task-section completed-section" aria-labelledby="completed-title"><div class="list-heading"><h2 id="completed-title"><span class="section-dot filled" aria-hidden="true"></span>Completed Tasks <span class="count-badge" id="completed-badge">0</span></h2><span class="list-caption">WELL DONE</span></div><ul id="completed-list" class="task-list"></ul><div id="completed-empty" class="empty-state"><span class="empty-icon" aria-hidden="true">✓</span><h3>Good things take a first step.</h3><p>Completed tasks will appear here.<br>Every little win counts.</p></div></section>
+    </div>
+    <p class="workspace-note">Just you and your next step. Tasks are saved in this browser.</p>
+    <p id="announcement" class="sr-only" role="status" aria-live="polite"></p>
+    <noscript><p class="error">Please enable JavaScript to add and manage tasks.</p></noscript>
+  </main>
+  <footer class="site-footer wrap"><span>TaskFlow <span class="footer-divider">/</span> Made for everyday progress.</span><span>Oasis Infobyte · Level 2 · Task 3</span></footer>
+</body>
+</html>
